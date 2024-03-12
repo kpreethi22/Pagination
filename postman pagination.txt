@@ -1,0 +1,71 @@
+http://localhost:8081/api/posts     postMethod
+json object
+{
+  "title": "Oceann",
+  "description": "clear bluee",
+  "content": "Vastt"
+}
+nrml get without pagination query in it gives default set
+http://localhost:8081/api/posts    get method
+[
+    {
+        "id": "02c82b33-4efa-485d-a4a1-38fa2b7e5d6f",
+        "title": "Mountain",
+        "description": "High",
+        "content": "Scenic"
+    },
+    {
+        "id": "13d43aaf-72d7-4085-b98c-ae86500e5dcd",
+        "title": "Apple",
+        "description": "Red",
+        "content": "Juicy"
+    },
+    {
+        "id": "1e8e585f-30c1-4cbc-80a7-fd54c8063efe",
+        "title": "Moon",
+        "description": "Night",
+        "content": "Glowing"
+    },
+    {
+        "id": "30385b4d-9c97-4576-a275-537767056f76",
+        "title": "Carrot",
+        "description": "Orange",
+        "content": "Crunchy"
+    },
+    {
+        "id": "7d79e532-e6f4-4671-9552-c66fa40e30d6",
+        "title": "Oceann",
+        "description": "clear bluee",
+        "content": "Vastt"
+    }
+]
+with pagination custom query 
+http://localhost:8081/api/posts?pageNo=0&pageSize=4&sortBy&sortDir                         get method
+json object
+[
+    {
+        "id": "02c82b33-4efa-485d-a4a1-38fa2b7e5d6f",
+        "title": "Mountain",
+        "description": "High",
+        "content": "Scenic"
+    },
+    {
+        "id": "13d43aaf-72d7-4085-b98c-ae86500e5dcd",
+        "title": "Apple",
+        "description": "Red",
+        "content": "Juicy"
+    },
+    {
+        "id": "1e8e585f-30c1-4cbc-80a7-fd54c8063efe",
+        "title": "Moon",
+        "description": "Night",
+        "content": "Glowing"
+    },
+    {
+        "id": "30385b4d-9c97-4576-a275-537767056f76",
+        "title": "Carrot",
+        "description": "Orange",
+        "content": "Crunchy"
+    }
+]
+
